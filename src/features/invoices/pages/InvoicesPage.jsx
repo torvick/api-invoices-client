@@ -8,8 +8,8 @@ export default function InvoicesPage() {
 
   const onGridChange = ({ type, model }) => {
     if (type === 'pagination') {
-      const { page, pageSize } = model; // page: 0-based
-      setParams(p => ({ ...p, page: page + 1, per_page: pageSize })); // ⬅️ 1-based
+      const { page, pageSize } = model;
+      setParams(p => ({ ...p, page: page + 1, per_page: pageSize }));
     }
     if (type === 'sorting') {
       const entry = model?.[0];

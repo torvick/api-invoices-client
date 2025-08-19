@@ -14,7 +14,7 @@ export function useInvoices() {
     status: '',
     sort_by: 'invoice_date',
     sort_dir: 'asc',
-    page: 1,          // 1-based (como tu API)
+    page: 1,
     per_page: 50,
   });
 
